@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spotify_etl"
+version = "0.0.1"
+dependencies = [
+    "spotipy"
+]
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]
+include = ["*"]
+exclude = ["tests*"]
+# namespaces = false  # true by default
+
+[project.scripts]
+spotify_etl = "spotify_etl.main:main"
