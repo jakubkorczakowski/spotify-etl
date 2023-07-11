@@ -1,1 +1,1 @@
-# spotigy-etl
+# spotify-etl
